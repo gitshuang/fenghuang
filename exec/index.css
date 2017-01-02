@@ -1,0 +1,231 @@
+/*reset*/
+body, dl, dt, dd, ul, ol, h1, h2, h3, h4, h5, h6, form, input, textarea, p, table, th, td {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+body {
+    width: 100%;
+    font: 12px/18px Arial, Helvetica, sans-serif;
+    background: #fff
+}
+
+input, select, button, textarea {
+    vertical-align: middle;
+    font-size: 12px;
+    outline: none
+}
+
+ol, ul {
+    list-style: none
+}
+
+img {
+    border: 0
+}
+
+em {
+    font-style: normal
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+textarea {
+    resize: none
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #464646
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #464646
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.clearfix:after {
+    content: " ";
+    overflow: hidden;
+    clear: both;
+    display: block;
+    height: 0
+}
+
+.header{
+    background: #f54343;
+    height:.84rem;
+    position: relative;
+}
+.header .logo{
+    text-indent: -999px;
+    float: left;/*浮动解决父节点继承子节点margin*/
+    display: block;
+    width:2.2rem;
+    height:.46rem;
+    background: url("../images/iphone_logo.png");
+    background-size: cover;
+    margin: .18rem auto auto .2rem;
+}
+.header i{
+    float: right;
+    margin-right:.4rem;
+    margin-top:.2rem;
+    width: .38rem;
+    height:.38rem;
+}
+.header i.search{
+    background: url("../images/iphone_search.png");
+    background-size: cover;
+}
+.header i.clock{
+    background: url("../images/iphone_clock.png");
+    background-size: cover;
+}
+
+.nav-inner{
+    /*border-right: 18px solid rgba(155,235,143,.5);*/
+    margin-right: .3rem;
+    height: .8rem;
+    overflow-x: auto;
+    white-space: nowrap;/*很重要*/
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch
+}
+.nav-inner::-webkit-scrollbar{
+    display: none;
+}
+.nav-inner a{
+    text-align: center;
+    display: inline-block;
+    height: .7rem;
+    line-height: .7rem;
+    color: #6b7989;
+    font-size: .34rem;
+    width:1rem;
+    text-decoration: none;
+    border-bottom: .05rem solid #fff;
+    border-top: .05rem solid #fff;
+}
+.nav-inner a.cur{
+    border-bottom: .05rem solid #f54343;
+}
+.swiper-container{
+    position: relative;
+}
+.swiper-container .cover{
+    display:block;
+    height:4.22rem;
+    width:100%;
+    background-size: cover;
+}
+.swiper-container h3{
+    position: absolute;
+    bottom: 0;/*.13rem*/
+    left:0;
+    color:#fff;
+    font-size: .33rem;
+    height:.6rem;
+    line-height: .6rem;
+    background: rgba(0,0,0,.5);
+}
+.swiper-container h3 span{
+    vertical-align: .05rem;
+    margin-left: .18rem;
+    margin-right: .1rem;
+    padding: .03rem .08rem .05rem .1rem;
+    background: #f54343;
+    font-size: .28rem;
+}
+.swiper-container .swiper-pagination-bullets{
+    bottom: .6rem;
+}
+.swiper-pagination .swiper-pagination-bullet{
+    margin-right:.15rem;
+    background-color: #dab08c;
+    opacity: .6;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+    background: #fff
+}
+.i-item{
+    padding:.24rem .3rem;
+}
+.i-pic{
+    width:1.82rem;
+    float: left;
+}
+.i-pic img{
+    width: 100%;
+}
+.i-data{
+    height: 1.3rem;
+    margin-left: 2.14rem;
+    position: relative;
+}
+.i-desc{position: absolute;bottom: 0;width: 100%;}
+.i-title{font-size: .36rem;line-height: .44rem;max-height: .88rem;overflow: hidden}
+.i-desc div{float: left;font-size: .22rem;}
+.i-text .i-desc{position: inherit;padding-top:.25rem;}
+.i-desc .i-flag,.i-desc .i-num{
+    float: right;
+}
+.i-text{
+    margin-left: 0;
+    height: auto;
+}
+
+.i-text .i-mutiPic{
+    width:110%;
+    padding-top:.25rem;
+}
+.i-text .i-mutiPic img{
+    width:2.24rem;
+    float: left;
+    margin-right: .1rem;
+}
+.i-video{padding-top:.25rem;position: relative}
+.i-video img{
+    width: 100%;
+    float: left;
+    /*height:3.88rem*/
+}
+.i-video .i-play{position:absolute;width: 1.10rem;left:50%;margin-left: -.55rem;top:40%;text-align: center;font-size: .22rem;color: #fff}
+.i-video .i-play .playBtn{display:block;width:100%;height:1.10rem;background: url("../images/video.png");background-size: cover;-webkit-background-size:cover;margin-bottom: .2rem}
+
+.footer{
+    padding:0rem .24rem;
+    height:.97rem;
+    background: #f8f7f7;
+    line-height: 1.2rem;
+    color: #6b7989;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+}
+.footer a{
+    display: inline-block;
+    width: 1.24rem;
+    text-align: center;
+    font-size: .24rem;
+    line-height: .44rem;
+}
