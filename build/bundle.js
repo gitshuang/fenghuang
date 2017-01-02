@@ -141,25 +141,29 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'panel panel-success' },
+	                { className: 'container' },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'panel-heading' },
+	                    { className: 'panel panel-success' },
 	                    _react2.default.createElement(
-	                        'h3',
-	                        { className: 'text-center' },
-	                        'react-note'
+	                        'div',
+	                        { className: 'panel-heading' },
+	                        _react2.default.createElement(
+	                            'h3',
+	                            { className: 'text-center' },
+	                            'react-note'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'panel-footer', id: 'footer' },
+	                        _react2.default.createElement(_commentForm2.default, { addComment: this.addComment.bind(this) })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'panel-body', id: 'body' },
+	                        _react2.default.createElement(_commentList2.default, { deleteComment: this.deleteComment.bind(this), comments: this.state.comments })
 	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'panel-footer', id: 'footer' },
-	                    _react2.default.createElement(_commentForm2.default, { addComment: this.addComment.bind(this) })
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'panel-body', id: 'body' },
-	                    _react2.default.createElement(_commentList2.default, { deleteComment: this.deleteComment.bind(this), comments: this.state.comments })
 	                )
 	            );
 	        }
