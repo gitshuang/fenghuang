@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>凤凰视频首页</title>
+    <link rel="stylesheet" href="css/v-news161231.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+</head>
+
+<body>
+<!-- rem s -->
+<script>
+    (function (doc, win) {
+        var _root = doc.documentElement,
+                resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                resizeCallback = function () {
+                    var clientWidth = _root.clientWidth,
+                            fontSize = 10*10;
+                    if (!clientWidth) return;
+                    if(clientWidth < 1080) {
+                        fontSize = 100*(clientWidth / 750);
+                    } else {
+                        fontSize = 100*(1080 / 750);
+                    }
+                    _root.style.fontSize = fontSize + 'px';
+                };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvent, resizeCallback, false);
+        doc.addEventListener('DOMContentLoaded', resizeCallback, false);
+    })(document, window);
+</script>
+<!-- rem e -->
+
+<!--header -->
+<div class="v-mobile-header">
+    <h1 class="i-logo"><a href="#" title="凤凰视频">凤凰视频</a></h1>
+    <div class="i-login">
+        <i class="i-login-serch"></i>
+    </div>
+</div>
+
+<!--nav-->
+<div class="top-menu">
+    <div class="top-menu-inner">
+        <a href="#">首页</a>
+        <a href="#" class="cur">军事</a>
+        <a href="#">娱乐</a>
+        <a href="#">搞笑</a>
+        <a href="#">搞笑</a>
+        <a href="#">搞笑</a>
+        <a href="#">财经</a>
+        <a href="#">美女</a>
+        <a href="#">社会</a>
+    </div>
+</div>
+
+<!--焦点图-->
+<!--<div class="focus">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="temp/w750_h422.jpg" alt=""/>
+                <h3><span>推荐</span>韩国气功大师表演铁布衫失误 结果…</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="temp/w750_h422.jpg" alt=""/>
+                <h3><span>推荐</span>韩国气功大师表演铁布衫失误 结果…</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="temp/w750_h422.jpg" alt=""/>
+                <h3><span>推荐</span>韩国气功大师表演铁布衫失误 结果…</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="temp/w750_h422.jpg" alt=""/>
+                <h3><span>推荐</span>韩国气功大师表演铁布衫失误 结果…</h3>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>-->
+
+<div class="focus">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a class="cover" href="#" style="background-image:url(temp/w750_h422.jpg)"></a>
+                <h3><span>推荐</span>韩国气功大师表演铁布衫失误 结果…</h3>
+            </div>
+            <div class="swiper-slide">
+                <a class="cover" href="#" style="background-image:url(temp/w750_h422.jpg)"></a>
+                <h3><span>推荐</span>韩国气功大师表演铁布衫失误 结果…</h3>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" style="background-image:url(temp/w750_h422.jpg)"></a>
+                <h3><span>推荐</span>韩国气功大师表演铁布衫失误 结果…</h3>
+            </div>
+            <div class="swiper-slide">
+                <a class="cover" href="#" style="background-image:url(temp/w750_h422.jpg)"></a>
+                <h3><span>推荐</span>韩国气功大师表演铁布衫失误 结果…</h3>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+<script type="text/javascript">
+    var myswiper=new Swiper('.swiper-container',{
+        pagination:'.swiper-pagination'
+    })
+</script>
+</body>
+</html>

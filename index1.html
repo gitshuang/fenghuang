@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>凤凰视频</title>
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="index1.css">
+</head>
+<script>
+    (function (doc, win) {
+        var _root = doc.documentElement,
+            resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            resizeCallback = function () {
+                var clientWidth = _root.clientWidth,
+                    fontSize = 10*10;
+                if (!clientWidth) return;
+                if(clientWidth < 1080) {
+                    fontSize = 100*(clientWidth / 750);
+                } else {
+                    fontSize = 100*(1080 / 750);
+                }
+                _root.style.fontSize = fontSize + 'px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvent, resizeCallback, false);
+        doc.addEventListener('DOMContentLoaded', resizeCallback, false);
+    })(document, window);
+</script>
+
+<body>
+
+<div class="v-mobile-header">
+    <h1 class="i-logo"><a href="" title="凤凰视频">凤凰视频</a></h1>
+    <div class="i-login">
+        <i class="i-login-search">
+
+        </i>
+    </div>
+</div>
+<div class="top-menu">
+    <div class="top-menu-inner">
+        <a href="">首页</a>
+        <a href="" class="cur">历史</a>
+        <a href="">军事</a>
+        <a href="">娱乐</a>
+        <a href="">社会</a>
+        <a href="">搞笑</a>
+        <a href="">原创</a>
+        <a href="">原创</a>
+        <a href="">原创</a>
+        <a href="">原创</a>
+    </div>
+</div>
+<script src="underscore-min.js"></script>
+    <div class="focus">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+<script src="jquery-1.9.1.min.js"></script>
+<script type="text/template" id="focusTemp">
+
+    <%_.each(_focus,function(n){%>
+    <div class="swiper-slide">
+        <a href="##" alt="" style="background-image:url(<%=n.thumbnail%>)"></a>
+        <h3><span>推荐</span><%=n.title%></h3>
+    </div>
+    <%})%>
+</script>
+<script src="swiper.min.js"></script>
+<script>
+    $.ajax({
+        url:'http://api.iclient.ifeng.com/ClientNews?id=SYLB10,SYDT10',
+        dataType:'jsonp',
+        success:function(data) {
+            for(var i=0;i<data.length;i++){
+                if(data[i].type=='list'){
+                    var list = data[i].item;
+                    console.log(list);
+                }else{
+                    _focus = data[i].item;
+                    console.log(_focus);
+                }
+            }
+            $('.swiper-wrapper').append(_.template($('#focusTemp').html(),_focus))
+            var myswiper=new Swiper('.swiper-container',{
+                pagination:'.swiper-pagination',
+//                autoplay:5000
+            });
+        }
+    })
+
+
+</script>
+</body>
+</html>

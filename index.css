@@ -1,0 +1,219 @@
+/*reset*/
+/*reset*/
+body, dl, dt, dd, ul, ol, h1, h2, h3, h4, h5, h6, form, input, textarea, p, table, th, td {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+body {
+    width: 100%;
+    /*min-width: 1000px;*/
+    font: 12px/18px Arial, Helvetica, sans-serif;
+    background: #fff
+}
+
+input, select, button, textarea {
+    vertical-align: middle;
+    font-size: 12px;
+    outline: none
+}
+
+ol, ul {
+    list-style: none
+}
+
+img {
+    border: 0
+}
+
+em {
+    font-style: normal
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+textarea {
+    resize: none
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #464646
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #464646
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.clearfix:after {
+    content: " ";
+    overflow: hidden;
+    clear: both;
+    display: block;
+    height: 0
+}
+
+
+/*html{
+    font-size:100px;
+}
+.top{
+    height:1.28rem;
+    width:100%;
+    background: #f54343;
+    margin: 0 auto;
+}
+.nav a{
+    padding:.17rem .11rem;
+
+    !*border-top:6px solid transparent;*!
+    margin: 0 1px;
+    !*display: inline-block;*!
+    font-size: .22rem;
+    !*box-sizing:border-box;!*什么用*!*!
+}
+.nav a:hover{
+    border-bottom: 6px solid #f54343 ;
+}*/
+.v-mobile-header {
+    width: 100%;
+    height: .94rem;
+    background: #f54343;
+}
+
+.v-mobile-header .i-logo {
+    float: left;
+    width: 2.2rem;
+    height: .46rem;
+    text-indent: -999px;
+    margin: .2rem 0 0 .19rem;
+}
+
+.v-mobile-header .i-logo a {
+    display: block;
+    width: 2.2rem;
+    height: .46rem;
+    background: url("images/iphone_logo.png") no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+.v-mobile-header .i-login{
+    width: .38rem;
+    height:.38rem;
+    float: right;
+}
+.v-mobile-header .i-login .i-login-search{
+    display: block;
+    width: .38rem;
+    height:.38rem;
+    background: url("images/iphone_search.png") no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+.top-menu{
+    width:100%;
+    overflow: hidden;
+    overflow-x: auto;;
+
+}
+.top-menu::-webkit-scrollbar{
+    display: none;
+}
+.top-menu-inner{
+    /*height:.8rem;
+    line-height: .8rem;*//*为什么加上就不行*/
+    white-space: nowrap;
+    font-size: 0;/*为什么*/
+}
+.top-menu-inner a{
+    height:.8rem;
+    line-height: .8rem;
+    color: #6b7989;
+    display: inline-block;
+    width:1.07rem;
+    text-align: center;
+    font-size: .34rem;
+}
+.top-menu-inner a.cur{
+    height: .75rem;
+    line-height: .75rem;
+    border-bottom: .05rem solid #f54343;
+}
+.focus{
+    width:100%;
+    /*height:4.42rem;*/
+    position: relative;
+}
+/*.swiper-container{
+    height: 100%;
+}
+.swiper-wrapper{
+    height:100%;
+    overflow: hidden;
+}
+.swiper-slide{
+    height: 100%;
+    position: relative;
+}*/
+.focus img{
+    width:100%;/*一定要设置宽度*/
+    /*height: 100%;*/
+     display: block;
+}
+.focus .swiper-container{
+    /*height:100%;   !*??????????????????????????????*!*/
+}
+.focus .swiper-slide h3{
+    bottom:0;
+    left:0;
+    width: 100%;
+    padding-left:.15rem;
+    line-height:.6rem;
+    position: absolute;
+    font-size: .326rem;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.6);
+}
+.focus .swiper-slide h3 span{
+    font-size: .28rem;
+    background: #f54343;
+    padding: 0.03rem 0.06rem;
+    margin-right: 0.1rem;
+    color: #fff;
+}
+.focus .swiper-pagination{
+    position: absolute;
+    left: 50%;
+    width: 1.6rem;
+    bottom: .9rem;
+    color: #bf9c8a;
+}
+.focus .swiper-pagination-bullet {
+    margin-right: .15rem
+}
+
+.focus .swiper-pagination-bullet-active {
+    background: #fff
+}
+
+
+
