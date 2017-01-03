@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/*reset*/
+body,div,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,iframe,input,textarea,select,label,article,aside,footer,header,menu,nav,section,time,audio,video{margin:0;padding:0}
+article,aside,footer,header,hgroup,nav,section,audio,canvas,video,img{display:block}
+body{font-size:100%;font-family:Helvetica,STHeiti,Droid Sans Fallback;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+textarea{resize:none}
+iframe,img{border:0}
+ul,ol{list-style:none}
+input,select,textarea{outline:0;-webkit-user-modify:read-write-plaintext-only}
+input{-webkit-appearance:none}
+a{text-decoration:none}
+h1,h2,h3,h4{font-weight:100}
+.fl{float:left}
+.fr{float:right}
+/*loading*/
+.loadPage{position:absolute;width:100%;height:100%;background:#b8e0f0;z-index:999}
+.loadNum{position:absolute;z-index:5;left:50%;top:50%;margin:-63px 0 0 -63px;width:127px;height:127px;line-height: 127px;font-size:30px;color:#26667f;border-radius:100px;background:rgba(255,255,255,0.2);border:1px solid #fff;text-align:center}
+.loadAnimation{position:absolute;left:50%;bottom:0;margin-left:-40px;width:80px;height:0;text-align:center;background:url(../images/load_bg01.png) 0 0 no-repeat;-webkit-background-size:80px 1000px;background-size:80px 1000px}
+.loadDec{position:absolute;left:0;bottom:0;z-index:3}
+/*page*/
+body,html{width:100%;height:100%;position:relative;overflow:hidden;-webkit-backface-visibility:hidden;background:#999999}
+.global{position:relative;height:100%;width:100%;-webkit-transform-style:preserve-3d;-webkit-backface-visibility:hidden}
+.screen{-webkit-transform-style:preserve-3d}
+.ease{-webkit-transition:all 1.0s ease-in-out}
+.layout{position:relative;overflow:hidden}
+.swipeTip{width:24px;height:15px;z-index:5;margin:0 0 0 -12px;position:absolute;left:50%;bottom:20px;background:url(../images/swipe.png) no-repeat;-webkit-background-size:24px 15px;background-size:24px 15px;z-index:999}
+/*背景*/
+.pageBg{width:100%;position:absolute;left:0;bottom:0}
+.indexBg{width:100%;position:absolute;left:0;top:0;z-index:-1}
+/*首屏*/
+.logo{position:absolute;left:50%;top:70px;margin-left:-146px;width:292px;height:226px}
+.slogen{position:absolute;left:50%;bottom:130px;margin-left:-127px;width:254px}
+/*其他屏*/
+#layout_2 .box{position:absolute;z-index:2;width:100%;top:0;left:0}
+#layout_2 .bd{text-align:center;line-height:25px;width:80%;margin:40px auto;padding-bottom:30px}
+/*播放器*/
+.videoBox{width:100%;height:200px;position:absolute;top:36px;overflow:hidden}
+.videoBox img{width:100%;display:block;}
+/*文字*/
+.indexTxt{opacity:0;position:absolute;left:0;bottom:0;width:100%;height:60%;line-height:25px;color:#fff;background:#666}
+.indexTxt p{margin:20px 0;font-size:14px;text-align:center;color:#fff}
+/*导航*/
+.topBar{display:none;position:absolute;left:0;top:0;z-index:100;width:100%;height:36px;line-height:36px;color:#fff;font-size:18px;background:#333}
+.topBar .fr{padding-right:5px}
+.btn_menu{display:inline-block;background:url(../images/spr_ico.png) 0 0 no-repeat;-webkit-background-size:cover;background-size:cover;margin-left:15px}
+.btn_menu{width:40px;height:20px;margin-top:7px;background-position:left center}
+.menu{width:115px;position:absolute;z-index:101;left:-115px;top:36px;background:#333}
+.menu ul{padding:10px 0}
+.menu li{line-height:50px;text-align:center;color:#fff;font-size:15px}
+.scrollTip{position:absolute;left:50%;bottom:20px;margin-left:-19px;z-index:2;width:38px;height:38px;background:url(../images/scroll_tip.png) 0 0 no-repeat;-webkit-background-size:cover;	background-size:cover}
+/*点击侧栏动画*/
+.g_cur{	box-shadow: 0 0 1px #333;-webkit-transition: all .3s ease-out;-webkit-transform: perspective(640px) translate3d(35%, 0, 0) rotate3d(0, 1, 0, -40deg);transform: perspective(640px) translate3d(35%, 0, 0) rotate3d(0, 1, 0, -40deg)}
+.g_out{	box-shadow: 0 0 0 transparent;-webkit-transition: all .3s ease-out;-webkit-transform:perspective(0) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);transform:perspective(0) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg)}
+/*animate*/
+/*箭头*/
+.fadeOutUp{-webkit-animation:2s fadeOutUp ease-in-out infinite;animation:2s fadeOutUp ease-in-out infinite}
+@-webkit-keyframes fadeOutUp{
+	0%{opacity:1;-webkit-transform:translateY(0px);transform:translateY(0px)}
+	50%{opacity:0.3;-webkit-transform:translateY(-20px);transform:translateY(-20px)}
+}
+@keyframes fadeOutUp{
+	0%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}
+	50%{opacity:0.3;-webkit-transform:translateY(-20px);-ms-transform:translateY(-20px);transform:translateY(-20px)}
+}
+
+.fadeIn{-webkit-animation-delay:1s;}
+/*兼容*/
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2){/*兼容iphone4/4s*/
+.logo{top:20px}
+.slogen{bottom:120px}
+}
+@media (device-width:375px) and (-webkit-min-device-pixel-ratio:2){/*兼容iphone 6*/}
+@media (device-width:414px) and (-webkit-min-device-pixel-ratio:3.0){/*兼容iphone6 plus*/}

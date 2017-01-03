@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+  <meta content="yes" name=" apple-mobile-web-app-capable" />  <title>凤凰视频-最具媒体价值的综合视频门户-</title>   
+  <link rel="stylesheet" href="css/style.css" /> 
+  <script src="js/zepto.min.js"></script> 
+</head>
+<body>
+<!-- loading begin -->
+<div id="loading"></div>
+<!-- loading end -->
+
+<!-- wrap begin -->
+<div id="wrap"> 
+	<div id="scrollContent">
+		<!-- page0 begin -->
+		<section class="content" id="c0"> 
+			<p id="pptit01" class="ptit01"></p> 
+			<p id="pptit02" class="ptit02"></p> 
+			<div class="hint">
+				<img src="http://y2.ifengimg.com/l/2014/50/e2018a90918bc1e/hint.png" />
+			</div> 
+		</section>
+		<!-- page0 end -->
+
+		<!-- page1 begin --> 
+		<section class="content" id="c1"> 
+			<span class="marchlogo"></span> 
+			<p id="pp01" class="p01"></p> 
+			<p id="pp02" class="p02"></p> 
+			<ul class="smallimg_list"> 
+				<li class="li01"><span class="s01"></span></li> 
+				<li class="li02"><span class="s02"></span></li> 
+				<li class="li03"><span class="s03"></span></li> 
+			</ul> 
+			<div class="bg_black"></div> 
+			<div class="bg_black_img"></div> 
+		</section>
+		<!-- page1 end -->
+		
+		<!-- page2 begin -->
+		<section class="content " id="c2"> 
+			<span class="marchlogo"></span> 
+			<p id="pp2_01" class="p2_01"></p> 
+			<p id="pp2_02" class="p2_02"></p> 
+			<p id="pp2_03" class="p2_03"></p> 
+			<p id="pp2_04" class="p2_04"></p> 
+			<ul class="smallimg_list"> 
+				<li class="li201"><span class="s201"></span></li> 
+				<li class="li202"><span class="s202"></span></li> 
+				<li class="li203"><span class="s203"></span></li> 
+			</ul> 
+			<div class="bg_black"></div> 
+			<div class="bg_black_img"></div> 
+		</section>
+		<!-- page2 end -->
+
+		<!-- page3 begin -->
+		<section class="content " id="c3"> 
+			<span class="marchlogo"></span> 
+			<p id="pp3_01" class="p3_01"></p> 
+			<p id="pp3_02" class="p3_02"></p> 
+			<p id="pp3_03" class="p3_03"></p> 
+			<p id="pp3_04" class="p3_04"></p> 
+			<ul class="smallimg_list"> 
+				<li class="li301"><span class="s301"></span></li> 
+				<li class="li302"><span class="s302"></span></li> 
+			</ul> 
+			<div class="bg_black"></div> 
+			<div class="bg_black_img"></div> 
+		</section>
+		<!-- page3 end --> 
+
+		<!-- page4 begin -->
+		<section class="content " id="c4"> 
+			<span class="marchlogo"></span> 
+			<p id="pp4_01" class="p4_01"></p> 
+			<p id="pp4_02" class="p4_02"></p> 
+			<p id="pp4_03" class="p4_03"></p> 
+			<ul class="smallimg_list">
+				<li class="li401"><span class="s401"></span></li>
+				<li class="li402"><span class="s402"></span></li> 
+				<li class="li403"><span class="s403"></span></li> 
+			</ul> 
+			<div class="bg_black"></div> 
+			<div class="bg_black_img"></div> 
+		</section>
+		<!-- page4 end -->
+
+	    <!-- page5 begin -->
+		<section class="content " id="c5"> 
+			<span class="marchlogo"></span> 
+			<p id="pp5_01" class="p5_01"></p> 
+			<p id="pp5_02" class="p5_02"></p> 
+			<p id="pp5_03" class="p5_03"></p> 
+			<p id="pp5_04" class="p5_04"></p> 
+			<ul class="smallimg_list"> 
+				<li class="li501"><span class="s501"></span></li> 
+			</ul> 
+			<div class="bg_black"></div> 
+			<div class="bg_black_img"></div> 
+		</section>
+		<!-- page5 end -->
+
+		<!-- page7 begin -->
+		<section class="content" id="c7"> 
+			<span class="marchlogo" style=" left:auto; right:10px;"></span> 
+			<div class=" pd_t01"> 
+				<div class="box_wq"> 
+				 <a href="#" target="_blank"> <img src="images/310x213_01.jpg" width="200" /> <p class="p_wq">极致简约 美到刚刚好 </p> </a> 
+				</div> 
+				<div class="box_wq"> 
+					<a href="#" target="_blank">
+						<img src="images/310x213_02.jpg" width="200" /> 
+						<p class="p_wq">最IN的沙溢</p> 
+					 </a> 
+				</div> 
+			</div> 
+		</section>
+		<!-- page7 end --> 
+    </div> 
+</div>
+<!-- wrap end  -->
+
+<script>
+Zepto(function($) {
+	var data = [{
+		"wrapId": "c0",
+		"animateIds": ["pptit01", "pptit02"],
+		"animateClass": ["pptit01", "pptit02"],
+		"done": false
+	}, {
+		"wrapId": "c1",
+		"animateIds": ["pp01", "pp02"],
+		"animateClass": ["pp01", "pp02"],
+		"done": false
+	}, {
+		"wrapId": "c2",
+		"animateIds": ["pp2_01", "pp2_02", "pp2_03", "pp2_04"],
+		"animateClass": ["pp2_01", "pp2_02", "pp2_03", "pp2_04"],
+		"done": false
+	}, {
+		"wrapId": "c3",
+		"animateIds": ["pp3_01", "pp3_02", "pp3_03", "pp3_04"],
+		"animateClass": ["pp3_01", "pp3_02", "pp3_03", "pp3_04"],
+		"done": false
+	}, {
+		"wrapId": "c4",
+		"animateIds": ["pp4_01", "pp4_02", "pp4_03"],
+		"animateClass": ["pp4_01", "pp4_02", "pp4_03"],
+		"done": false
+	}, {
+		"wrapId": "c5",
+		"animateIds": ["pp5_01", "pp5_02", "pp5_03", "pp5_04"],
+		"animateClass": ["pp5_01", "pp5_02", "pp5_03", "pp5_04"],
+		"done": false
+	}, {
+		"wrapId": "c6",
+		"animateIds": ["pp6_01", "pp6_02"],
+		"animateClass": ["pp6_01", "pp6_02"],
+		"done": false
+	}, {
+		"wrapId": "c7",
+		"animateIds": [],
+		"animateClass": [],
+		"done": false
+	}];
+	var filterClass = {
+		blur: "blur",
+		focus: "focus"
+	}
+	var $w = $(window),
+		$body = $("body")
+	$loading = $("#loading"),
+		$wrap = $("#wrap"),
+		$scrollContent = $("#scrollContent"),
+		$content = $(".content");
+
+	var contentLength = $content.size();
+	function initPage() {
+		var wH = $body.height();
+
+		$wrap.css({
+			"height": wH
+		});
+		$scrollContent.css({
+			"height": wH * contentLength
+		});
+		$content.css({
+			"height": wH
+		});
+	}
+	function resize() {
+		initPage();
+	}
+	function windowLoad() {
+		$("#loading").css({
+			display: "none"
+		});
+		onTouch.initAddClass();
+	}
+	var onTouch = {
+		startY: 0,
+		currentTop: 0,
+		onStart: function(e) {
+			this.startY = e.pageY;
+			this.currentTop = $scrollContent.css("top");
+
+		},
+		onMove: function(e) {
+			event.preventDefault();
+		},
+		onEnd: function(e) {
+			if (this.startY > e.pageY + 50) {
+				this.goDown();
+			} else if (this.startY < e.pageY - 50) {
+				this.goUp();
+			};
+		},
+		goDown: function() {
+			this.contentScroll("down");
+		},
+		goUp: function() {
+			this.contentScroll("up");
+		},
+		contentScroll: function(flag) {
+			var top = parseInt($scrollContent.css("top"));
+			if (flag == "down" && Math.abs(top) < $body.height() * (contentLength - 1)) {
+				$scrollContent.css({
+					"top": top - $body.height()
+				});
+				this.filterClass("down");
+			} else if (flag == "up" && top < 0) {
+				$scrollContent.css({
+					"top": top + $body.height()
+				});
+				this.filterClass("up");
+			};
+			this.addClass();
+		},
+		getCurrentIndex: function() {
+			var top = parseInt($scrollContent.css("top")),
+				currentIndex = parseInt(top / $body.height());
+			return Math.abs(currentIndex);
+		},
+		addClass: function(n) {
+			var index = n || this.getCurrentIndex();
+			var currentObj = data[index];
+			if (currentObj["done"]) {
+				return;
+			};
+			for (var i = 0; i < currentObj["animateIds"].length; i++) {
+				$("#" + currentObj["animateIds"][i]).addClass(currentObj["animateClass"][i]);
+			};
+			currentObj["done"] = true;
+		},
+		initAddClass: function() {
+			this.addClass(0);
+		},
+		filterClass: function(flag) {
+			var index = this.getCurrentIndex();
+			if (flag == "up" && index < contentLength - 1) {
+				$("#" + data[index]["wrapId"]).addClass(filterClass.focus);
+				$("#" + data[index + 1]["wrapId"]).removeClass(filterClass.focus);
+			} else if (flag == "down" && index > 0) {
+				$("#" + data[index]["wrapId"]).addClass(filterClass.focus);
+				$("#" + data[index - 1]["wrapId"]).removeClass(filterClass.focus);
+			};
+		}
+	};
+	(function() {
+		initPage();
+		window.onload = windowLoad;
+		window.onscroll = scroll;
+		window.onresize = resize;
+		window.onorientationchange = resize;
+		document.body.addEventListener('touchstart', function(e) {
+			if (!$(".bg_black").hasClass("offtouch")) {
+				e = e.changedTouches[0];
+				onTouch.onStart(e);
+			}
+		});
+		document.body.addEventListener('touchmove', function(e) {
+			if (!$(".bg_black").hasClass("offtouch")) {
+				onTouch.onMove(e.changedTouches[0], e);
+			}
+		});
+		document.body.addEventListener('touchend', function(e) {
+			if (!$(".bg_black").hasClass("offtouch")) {
+				onTouch.onEnd(e.changedTouches[0]);
+			}
+		});
+		var s_len = $("#scrollContent").find(".content").length;
+		$("#scrollContent").find(".content").each(function(i) {
+			$("#c" + i).find("li").each(function(i) {
+				$(this).click(function() {
+					$(this).parents(".content").find(".bg_black").css("height", "100%").addClass("offtouch");
+					$(this).parent("ul").hide().addClass("hideul");
+					$($(this).html()).appendTo($(this).parents(".content").find(".bg_black_img"));
+					$(this).parents(".content").find(".bg_black_img").show();
+				})
+			})
+		})
+		$(".bg_black_img").click(function() {
+			$(this).parent().find(".bg_black").css("height", "74px").removeClass("offtouch");
+			$(this).html("").hide();
+			$(".content").find(".hideul").show().removeClass("hideul");
+		})
+	})();
+});
+</script> 
+<script>
+/*微信分享*/
+window.shareData = {
+	"imgUrl": "images/150x150.jpg",
+	"timeLineLink": document.location.href,
+	"tTitle": document.title,
+	"tContent": "这里放分享的内容表述"
+};
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+	WeixinJSBridge.on('menu:share:appmessage', function(argv) {
+		WeixinJSBridge.invoke('sendAppMessage', {
+			"img_url": window.shareData.imgUrl,
+			"link": window.shareData.timeLineLink,
+			"desc": window.shareData.tContent,
+			"title": window.shareData.tTitle
+		}, function(res) {
+			document.location.href = mebtnopenurl;
+		})
+	});
+	WeixinJSBridge.on('menu:share:timeline', function(argv) {
+		WeixinJSBridge.invoke('shareTimeline', {
+			"img_url": window.shareData.imgUrl,
+			"link": window.shareData.timeLineLink,
+			"desc": window.shareData.tContent,
+			"title": window.shareData.tTitle
+		}, function(res) {
+			document.location.href = mebtnopenurl;
+		});
+	});
+}, false);
+</script> 
+<!--探针s--> 
+<script type="text/javascript">
+var sta_collection_time = new Date().getTime();
+</script>
+<script type="text/javascript" src="http://y3.ifengimg.com/sta_collection.3.3.10.min.js" id="sta_collection_new"></script>
+<!--探针e--> 
+</body>
+</html>
